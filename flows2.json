@@ -48,8 +48,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
-        "y": 160,
+        "x": 670,
+        "y": 300,
         "wires": []
     },
     {
@@ -67,8 +67,56 @@
         "y": 160,
         "wires": [
             [
-                "7733ef448e551c74"
+                "7733ef448e551c74",
+                "7ddcdc5b9c74383f"
             ]
         ]
+    },
+    {
+        "id": "7ddcdc5b9c74383f",
+        "type": "ui_text",
+        "z": "bb5cfe25816b6e91",
+        "group": "432f3c8a087c7c0e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 650,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3a54f052c3c80a7e",
+        "type": "ui_spacer",
+        "z": "bb5cfe25816b6e91",
+        "name": "spacer",
+        "group": "40dd7494c79a135a",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "432f3c8a087c7c0e",
+        "type": "ui_group",
+        "name": "FECHA - GRUPO",
+        "tab": "3f9ed2de8e113b20",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3f9ed2de8e113b20",
+        "type": "ui_tab",
+        "name": "FECHA EN EL TAB",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
     }
 ]
